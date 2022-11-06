@@ -1,12 +1,15 @@
 #!/bin/bash
-echo -n "Enter a number :"
-read o
+echo -n "enter first number :"
 read var1
+echo -n "enter oprator :"
+read o 
+echo -n "enter second number :"
 read var2
 
 case $o in 
-1) echo "$((var1+var2))";;
-"/") echo "2";;
-"*") echo "3";;
-*) echo "4";;
+"-") echo "$((var1-var2))";;
+"+") echo "$((var1+var2))";;
+"/") echo "$((var1/var2))";;
+"*") echo "$((var1*var2))";;
+*) echo "invalid opratons";;
 esac
