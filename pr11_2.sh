@@ -1,5 +1,5 @@
 #!/bin/bash
-l=3
+l=5
 for ((i=0;i< l; i++))
 do
 	for ((j=0 ;j<i; j++))

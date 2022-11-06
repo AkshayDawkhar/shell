@@ -1,21 +1,22 @@
 #!/bin/bash
-var=5
-if [ $var -eq 5 ]
+echo -n "enter your percentage % : "
+read var
+if [ $var -gt 35 ]
 then
-	echo "varq is eqal to 5"
+	echo "you pass you got $var %"
 fi 
 
-if ((var < 4))
+if ((var < 75))
 then
-    echo "var is not less than 4"
+    echo "marks are less than 75"
 else
-    echo "var is bigger than 4"
+    echo "marks are more than 75"
 fi
 
-if [ $var -lt 4 ]
+if [ $var -lt 90 ]
 then
-    echo "var is not less than 4"
-elif [ $var -gt 4 ]
+    echo "marks are less than 90 "
+elif [ $var -gt 90 ]
 then
-    echo "var is bigger than 4"
+    echo "marks are more than 90"
 fi
